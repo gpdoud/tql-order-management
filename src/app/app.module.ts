@@ -10,6 +10,11 @@ import { CustomerDetailComponent } from './customer/customer-detail/customer-det
 import { CustomerCreateComponent } from './customer/customer-create/customer-create.component';
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { E404Component } from './misc/e404/e404.component';
+import { MenuComponent } from './menu/menu/menu.component';
+import { SperListComponent } from './salesperson/sper-list/sper-list.component';
+import { SperDetailComponent } from './salesperson/sper-detail/sper-detail.component';
+import { SperCreateComponent } from './salesperson/sper-create/sper-create.component';
+import { SperEditComponent } from './salesperson/sper-edit/sper-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { E404Component } from './misc/e404/e404.component';
     CustomerDetailComponent,
     CustomerCreateComponent,
     CustomerEditComponent,
-    E404Component
+    E404Component,
+    MenuComponent,
+    SperListComponent,
+    SperDetailComponent,
+    SperCreateComponent,
+    SperEditComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
