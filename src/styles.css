@@ -2,3 +2,10 @@
 #component {
     margin: 10px;
 }
+th button.btn-link {
+    text-decoration: none;
+    color: black;
+}
+div#component-header input {
+    border: 0;
+}

@@ -11,10 +11,14 @@ import { SperDetailComponent } from './salesperson/sper-detail/sper-detail.compo
 import { SperCreateComponent } from './salesperson/sper-create/sper-create.component';
 import { SperEditComponent } from './salesperson/sper-edit/sper-edit.component';
 
+
+import { LoginComponent } from './salesperson/login/login.component';
+
 import { E404Component } from './misc/e404/e404.component';
+import { OrderCreateComponent } from './order/order-create/order-create.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/cust/list', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   
   { path: 'cust/list', component: CustomerListComponent },
   { path: 'cust/detail/:id', component: CustomerDetailComponent },
@@ -25,6 +29,10 @@ const routes: Routes = [
   { path: 'sper/detail/:id', component: SperDetailComponent },
   { path: 'sper/create', component: SperCreateComponent },
   { path: 'sper/edit/:id', component: SperEditComponent },
+
+  { path: 'login', component: LoginComponent },
+
+  { path: 'order/create', component: OrderCreateComponent },
 
   { path: '**', component: E404Component }
 ];

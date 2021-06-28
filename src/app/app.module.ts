@@ -15,6 +15,12 @@ import { SperListComponent } from './salesperson/sper-list/sper-list.component';
 import { SperDetailComponent } from './salesperson/sper-detail/sper-detail.component';
 import { SperCreateComponent } from './salesperson/sper-create/sper-create.component';
 import { SperEditComponent } from './salesperson/sper-edit/sper-edit.component';
+import { SortPipe } from './misc/sort.pipe';
+import { SearchCustomerPipe } from './customer/search-customer.pipe';
+import { SearchSalespersonPipe } from './salesperson/search-salesperson.pipe';
+import { MenuitemComponent } from './menu/menuitem/menuitem.component';
+import { LoginComponent } from './salesperson/login/login.component';
+import { OrderCreateComponent } from './order/order-create/order-create.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,13 @@ import { SperEditComponent } from './salesperson/sper-edit/sper-edit.component';
     SperListComponent,
     SperDetailComponent,
     SperCreateComponent,
-    SperEditComponent
+    SperEditComponent,
+    SortPipe,
+    SearchCustomerPipe,
+    SearchSalespersonPipe,
+    MenuitemComponent,
+    LoginComponent,
+    OrderCreateComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,
